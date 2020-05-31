@@ -1,5 +1,7 @@
 const router = require('express').Router();
-
+const {check, validationResult} = require('express-validator');
+const Task = require('models/tasks.js');
+    
 router.get('/', (req, res) => {
         res.send('<h1>Lista de tarefas</h1>');
     }
