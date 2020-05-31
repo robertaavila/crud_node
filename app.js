@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const taskRouter = require('./routes/tasks');
+const Task = require('models/tasks.js');
+
 const app = express();
 
 constport = 3001;
